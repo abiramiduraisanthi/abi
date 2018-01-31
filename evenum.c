@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main()
 {
-int a,b,i;
+int f,l,i;
 printf("\n enter the two intervels:");
 scanf("%d%d",&a,&b);
-for(i=a;i<=b;i++)
+for(i=f;i<=l;i++)
 {
 if(i%2==1)
 {
