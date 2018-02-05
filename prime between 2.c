@@ -1,19 +1,28 @@
 #include<stdio.h>
 int main()
 {
-int l,f,i,n;
-printf("%d%d",&f,&l);
-while(l<f)
-n=0;
+int l,h,i,flag,temp;
+printf("enter the 2 intervals:");
+scanf("%d%d",&l,&h);
+if(l>h)
 {
-for(i=2;i<=l/2;i++)
+temp=l;
+l=h;
+h=temp;
+}
+printf("%d%d enter the numbers between 2 intervals are:",l,h); 
+while(l<h)
+flag=0;
 {
-if(l%2==0)
+for(i=2;i<=l/2/2;i++)
 {
-n++;
+if(l%i==0)
+{
+flag=1;
 break;
 }
-if(n==0)
+}
+if(flag==0)
 {
 printf("%d",l);
 l++;
