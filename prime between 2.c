@@ -14,7 +14,7 @@ printf("%d%d enter the numbers between 2 intervals are:",l,h);
 while(l<h)
 flag=0;
 {
-for(i=2;i<=l/2/2;i++)
+for(i=2;i<=l/2;i++)
 {
 if(l%i==0)
 {
