@@ -1,16 +1,13 @@
 #include<stdio.h>
 int main()
 {
-int n,a[100],i,k;
+int n,a[100],i,k=0;
 printf("\n enter the count:");
 scanf("%d",&n);
-printf("\n enter the array of elements:");
-scanf("%d",&a[i]);
-k=a[i];
 for(i=2;i<=n;i++)
 {
   scanf("%d",&a[i]);
-if(a[i]<=k)
+if(a[i]>=k)
 {
 k=a[i];
 }
