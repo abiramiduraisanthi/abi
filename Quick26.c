@@ -12,7 +12,7 @@ for(j=1;j<=n;j++)
 {
 for(k=j+1;k<=n;k++)
 {
-if(a[i]>=a[k])
+if(a[j]>=a[k])
 {
 t=a[j];
 a[j]=a[k];
@@ -21,5 +21,6 @@ a[k]=t;
 }
 }
 printf("%d\n",t);
+  return 0;
 }
 
