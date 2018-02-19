@@ -11,7 +11,7 @@ if(t>60)
 {
 hr=t/60;
 min=t%60;
-printf("%d\t%d",hr,min)
+printf("%d\t%d",hr,min);
 }
 return 0;
 }
