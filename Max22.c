@@ -1,25 +1,23 @@
 #include<stdio.h>
 int main()
 {
-int n,i,j,t,a[10];
+int n,i,max,a[10];
 printf("\n enter the count:");
 scanf("%d",&n);
+  printf("\n enter the elements:");
 for(i=0;i<=n;i++)
 {
 scanf("%d",&a[i]);
 }
+  max=a[0];
   for(i=0;i<=n;i++)
-    {
-    for(j=i+1;j<=n;j++)
       {
-if(a[i]>=a[j])
+if(max<a[i])
 {
-t=a[i];
-  a[i]=a[j];
-  a[j]=t;
+max=a[i];
 }
-      }
+      
     }
-printf("%d maximum element is:",a[n]);
+printf("%d maximum element is:",max);
 return 0;
 }
