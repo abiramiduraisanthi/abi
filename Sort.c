@@ -1,25 +1,25 @@
 #include<stdio.h>
 int main()
 {
-int i,j,a[100],n,t;
-printf("\n enter the element:");
+int i,j,k,a[100],n,t;
+printf("\n enter the number \n enter the elment:");
 scanf("%d",&n);
 for(i=1;i<=n;i++)
 {
-scanf("%d",&a[i])
+scanf("%d",&a[i]);
 }
-for(i=1;i<=n;i++)
+for(j=1;j<=n;j++)
 {
-for(j=i+1;j<=n;j++)
+for(k=j+1;k<=n;k++)
 {
-if(a[j]>=a[i])
+if(a[j]>=a[k])
 {
-t=a[i];
-a[i]=a[j];
-a[j]=t;
+t=a[j];
+a[j]=a[k];
+a[k]=t;
 }
 }
+printf("%d\t",a[j]);
 }
-printf("%d\n",a[i])
-return 0;
+  return 0;
 }
