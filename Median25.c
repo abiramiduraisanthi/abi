@@ -2,7 +2,7 @@
 int main()
 {
 int n,t,a[10],i,j,k;
-printf("\n enter the count:")
+printf("\n enter the count:");
 scanf("%d",&n);
 for(i=1;i<=n;i++)
 {
