@@ -7,7 +7,7 @@ printf("\n enter the string:");
 scanf("%[^\n]",&string);
 for(i=0;string[i]!='\0';i++)
 {
-if(string[i]>'0'&&string[i]<='9 ')
+if(string[i]!=' ')
 {
 count++;
 }
